@@ -1,6 +1,6 @@
 const hosts = [
   { name: "Google", url: "https://www.google.com/generate_204" },
-  { name: "BHAKTI PURNA JUAL", url: "http://www.bhaktipurnajual.com/" },
+  { name: "BHAKTI PURNA JUAL", url: "bhaktipurnajual.com" },
   { name: "ZEN", url: "zen.bhakti.co.id" }
 ];
 
