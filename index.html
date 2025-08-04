@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Network Monitor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🌐 Network Monitor</h1>
+    <table id="monitorTable">
+      <thead>
+        <tr><th>Host</th><th>Status</th><th>Latency</th></tr>
+      </thead>
+      <tbody id="monitorBody"></tbody>
+    </table>
+    <p class="footnote">Auto-refresh every 10 seconds</p>
+  </div>
+  <script src="monitor.js"></script>
+</body>
+</html>
