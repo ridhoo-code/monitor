@@ -2,7 +2,7 @@ const hosts = [
   { name: "BHAKTI MY COMPANY", url: "www.bhakti.co.id/myCompany/" },
   { name: "BHAKTI PURNA JUAL", url: "www.bhaktipurnajual.com" },
   { name: "ZEN", url: "zen.bhakti.co.id" },
-  { name: "MISHIRIN", url: "mishirin.com:8088" },
+  { name: "MISHIRIN", url: "mishirin.com" },
   { name: "EMAIL", url: "webmail.bhakti.co.id" },
 ];
 
