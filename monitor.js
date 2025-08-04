@@ -1,7 +1,7 @@
 const hosts = [
   { name: "Google", url: "https://www.google.com/generate_204" },
-  { name: "Cloudflare", url: "https://1.1.1.1" },
-  { name: "OpenAI", url: "https://chat.openai.com" }
+  { name: "BHAKTI PURNA JUAL", url: "http://www.bhaktipurnajual.com/" },
+  { name: "ZEN", url: "http://zen.bhakti.co.id/" }
 ];
 
 const tableBody = document.getElementById("monitorBody");
