@@ -1,7 +1,8 @@
 const hosts = [
-  { name: "Google", url: "https://www.google.com/generate_204" },
+  { name: "BHAKTI MY COMPANY", url: "www.bhakti.co.id/myCompany/" },
   { name: "BHAKTI PURNA JUAL", url: "www.bhaktipurnajual.com" },
-  { name: "ZEN", url: "zen.bhakti.co.id" }
+  { name: "ZEN", url: "zen.bhakti.co.id" },
+  { name: "MISHIRIN", url: "mishirin.com:8088/sales/login" }
 ];
 
 const tableBody = document.getElementById("monitorBody");
