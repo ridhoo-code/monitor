@@ -1,7 +1,7 @@
 const hosts = [
   { name: "Google", url: "https://www.google.com/generate_204" },
   { name: "BHAKTI PURNA JUAL", url: "http://www.bhaktipurnajual.com/" },
-  { name: "ZEN", url: "http://zen.bhakti.co.id/" }
+  { name: "ZEN", url: "zen.bhakti.co.id" }
 ];
 
 const tableBody = document.getElementById("monitorBody");
