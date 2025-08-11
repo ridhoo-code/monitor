@@ -1,39 +1,101 @@
 body {
-  background: #121212;
+  background: #0d0d0d;
   color: #fff;
   font-family: 'Segoe UI', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  margin: 0;
 }
+
 .container {
   text-align: center;
+  width: 100%;
+  max-width: 700px;
+  padding: 20px;
 }
+
 h1 {
-  margin-bottom: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.8rem;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  padding: 12px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 114, 255, 0.4);
 }
+
+.icon {
+  font-size: 1.5em;
+}
+
 table {
   width: 100%;
-  max-width: 600px;
   border-collapse: collapse;
-  margin: 0 auto;
+  margin-top: 20px;
+  background: #1a1a1a;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
 }
+
 th, td {
-  padding: 12px;
-  border-bottom: 1px solid #444;
+  padding: 14px;
+  text-align: center;
 }
+
 th {
-  background: #222;
+  background: #262626;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
+
+tr {
+  transition: background 0.3s ease;
+}
+
+tr:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* STATUS BADGES */
 .status-up {
   color: #0f0;
+  background: rgba(0,255,0,0.1);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  box-shadow: 0 0 10px #0f0;
 }
+
 .status-down {
-  color: #f44;
+  color: #f00;
+  background: rgba(255,0,0,0.1);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  box-shadow: 0 0 10px #f00;
 }
+
+/* LATENCY COLORS */
+.latency-fast {
+  color: #0f0;
+  font-weight: bold;
+}
+.latency-medium {
+  color: #ff0;
+  font-weight: bold;
+}
+.latency-slow {
+  color: #f00;
+  font-weight: bold;
+}
+
 .footnote {
-  margin-top: 20px;
+  margin-top: 15px;
   color: #888;
   font-size: 0.9em;
 }
