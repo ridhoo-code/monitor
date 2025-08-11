@@ -4,6 +4,7 @@ const hosts = [
   { name: "ZEN", url: "zen.bhakti.co.id" },
   { name: "MISHIRIN", url: "mishirin.com" },
   { name: "EMAIL", url: "webmail.bhakti.co.id" },
+  { name: "testing offline", url: "webmail.bha" },
 ];
 
 const tableBody = document.getElementById("monitorBody");
