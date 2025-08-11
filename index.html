@@ -6,24 +6,33 @@
   <title>Monitor Website Company</title>
   <link rel="stylesheet" href="style.css" />
   <style>
-    .logo-container {
-      text-align: center;
-      margin-top: 15px;
-      margin-bottom: 10px;
+    /* CSS tambahan untuk icon */
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      justify-content: center; /* tengah */
     }
-    .logo-container img {
-      max-width: 200px;
-      height: auto;
+
+    .header img {
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 1.8rem;
     }
   </style>
 </head>
 <body>
-  <div class="logo-container">
-    <img src="https://www.static-src.com/wcsstore/Indraprastha/images/catalog/mlogo/BLO-60030-f09007da-b0cf-4738-a454-a5a70acb98a3.jpg" alt="Company Logo">
-  </div>
-
   <div class="container">
-    <h1>🌐 Network Monitor Website</h1>
+    <div class="header">
+      <img src="https://www.static-src.com/wcsstore/Indraprastha/images/catalog/mlogo/BLO-60030-f09007da-b0cf-4738-a454-a5a70acb98a3.jpg" alt="Logo">
+      <h1>🌐 Network Monitor Website</h1>
+    </div>
+    
     <table id="monitorTable">
       <thead>
         <tr><th>Host</th><th>Status</th><th>Latency</th></tr>
@@ -32,7 +41,6 @@
     </table>
     <p class="footnote">Auto-refresh every 10 seconds</p>
   </div>
-
   <script src="monitor.js"></script>
 </body>
 </html>
