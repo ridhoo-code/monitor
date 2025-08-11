@@ -33,8 +33,8 @@ h1 {
 
 table {
   width: 100%;
-  border-collapse: separate; /* Biar bisa pakai spacing */
-  border-spacing: 0 10px; /* Spasi antar baris */
+  border-collapse: separate;
+  border-spacing: 0 10px;
   margin-top: 20px;
   background: transparent;
 }
@@ -42,6 +42,7 @@ table {
 th, td {
   padding: 14px;
   text-align: center;
+  vertical-align: middle;
 }
 
 th {
@@ -64,27 +65,30 @@ tbody tr:hover {
   transform: scale(1.01);
 }
 
+/* STATUS COLUMN FLEX CENTER */
+td.status-cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* STATUS BADGES */
 .status-up {
-  display: inline-block;
   color: #0f0;
   background: rgba(0,255,0,0.1);
   padding: 6px 16px;
   border-radius: 20px;
   font-weight: bold;
   box-shadow: 0 0 10px #0f0;
-  margin: 4px 0; /* Jarak antar badge */
 }
 
 .status-down {
-  display: inline-block;
   color: #f00;
   background: rgba(255,0,0,0.1);
   padding: 6px 16px;
   border-radius: 20px;
   font-weight: bold;
   box-shadow: 0 0 10px #f00;
-  margin: 4px 0; /* Jarak antar badge */
 }
 
 /* LATENCY COLORS */
