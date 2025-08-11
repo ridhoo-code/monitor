@@ -33,12 +33,10 @@ h1 {
 
 table {
   width: 100%;
-  border-collapse: collapse;
+  border-collapse: separate; /* Biar bisa pakai spacing */
+  border-spacing: 0 10px; /* Spasi antar baris */
   margin-top: 20px;
-  background: #1a1a1a;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  background: transparent;
 }
 
 th, td {
@@ -53,31 +51,40 @@ th {
   letter-spacing: 1px;
 }
 
-tr {
-  transition: background 0.3s ease;
+tbody tr {
+  background: #1a1a1a;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  transition: transform 0.2s ease, background 0.3s ease;
 }
 
-tr:hover {
+tbody tr:hover {
   background: rgba(255, 255, 255, 0.05);
+  transform: scale(1.01);
 }
 
 /* STATUS BADGES */
 .status-up {
+  display: inline-block;
   color: #0f0;
   background: rgba(0,255,0,0.1);
-  padding: 6px 12px;
+  padding: 6px 16px;
   border-radius: 20px;
   font-weight: bold;
   box-shadow: 0 0 10px #0f0;
+  margin: 4px 0; /* Jarak antar badge */
 }
 
 .status-down {
+  display: inline-block;
   color: #f00;
   background: rgba(255,0,0,0.1);
-  padding: 6px 12px;
+  padding: 6px 16px;
   border-radius: 20px;
   font-weight: bold;
   box-shadow: 0 0 10px #f00;
+  margin: 4px 0; /* Jarak antar badge */
 }
 
 /* LATENCY COLORS */
